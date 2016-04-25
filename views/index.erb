@@ -1,0 +1,13 @@
+<html>
+<head></head>
+<body>
+  <h1>Here are all the restaurants</h1>
+  <ul>
+    <% @restos.each do |resto| %>
+      <li>
+        <a href="/restaurants/<%= resto.id %>"><%= resto.name %></a>
+      </li>
+    <% end %>
+  </ul>
+</body>
+</html>
